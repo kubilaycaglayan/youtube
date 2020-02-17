@@ -1,31 +1,43 @@
-.first-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-  }
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(204, 74, 74);
+}
 
-  .second-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-  }
-  
-  li {
-    float: left;
-  }
-  .search-box{
-      text-align: center;
-      margin-left: 200px;
-      width: 500px;
-  }
-  nav img{
-      margin-left: 50px;
-      width: 70px;
-      height: 40px;
-  }
+li {
+float: left;
+}
+button{
+height: 40px;
+}
+.search-box{
+text-align: center;
+margin-left: 200px;
+width: 500px;
+height: 40px;
+border-color: black;
+}
+.first-ul img{
+margin-left: 50px;
+width: 70px;
+height: 40px;
+}
+.second-ul img{
+margin-left: 50px;
+width: 70px;
+height: 40px;
+}
+.side-bar{
+float: right;
+background-color: white;
+max-width: 400px;
+}
 
-  
+.first-ul{
+background-color: white;
+} 
+.comments{
+border: solid black;
+}
