@@ -1,4 +1,12 @@
-ul {
+.first-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .second-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,6 +23,9 @@ ul {
       width: 500px;
   }
   nav img{
+      margin-left: 50px;
       width: 70px;
       height: 40px;
   }
+
+  
