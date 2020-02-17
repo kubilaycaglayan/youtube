@@ -41,3 +41,13 @@ background-color: white;
 .comments{
 border: solid black;
 }
+
+.body {
+    padding-left: 10%;
+
+}
+
+h1 {
+    text-align: center;
+
+}
