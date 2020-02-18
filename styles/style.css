@@ -1,7 +1,11 @@
+body{
+    background-color: rgb(240, 233, 233);
+}
 .topnav {
     position: relative;
     overflow: hidden;
     border-bottom-style: double;
+    background-color: white;
 } 
 .topnav img {
     height: 25px;
@@ -19,16 +23,16 @@
     transform: translate(-50%, -50%); 
 }
 .topnav-centered input {
-      width: 400px;
+    width: 400px;
 }
 .topnav-right {
     float: right;
 }
 section{
-    padding-left: 15px;   
+    padding-left: 10%;   
 }
 aside{
-    border-style: solid;
+    background-color: white;
 }
 #recommended-videos{
     width: 420px;
@@ -45,12 +49,12 @@ aside{
     position: relative;
     bottom: 10px;
     word-wrap: break-word;
-    left: px;
     font-size: 14px;
 }
 .main-section{
-    padding-top: 10px;
+    padding-top: 25px;
     display: inline-block;
+    padding-left: 10%;
 }
 .video-bottom {
     display: inline-block;
@@ -65,7 +69,7 @@ aside{
     float: right;
 }
 article{
-    border-style: solid;
+    padding-left: 10%;
 }
 footer{
     border-style: solid;
