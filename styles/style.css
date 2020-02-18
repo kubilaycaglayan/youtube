@@ -31,7 +31,7 @@ aside{
     border-style: solid;
 }
 #recommended-videos{
-    width: 600px;
+    width: 420px;
 }
 #recommended-videos img{
     height: 94px;
@@ -39,13 +39,14 @@ aside{
 }
 #recommended-videos a{
     display: inline-block;
-    width: 250px;
+    width: 180px;
 }
 .video-titles{
     position: relative;
-    bottom: 60px;
+    bottom: 10px;
     word-wrap: break-word;
-    right: 80px;
+    left: px;
+    font-size: 14px;
 }
 .main-section{
     padding-top: 10px;
