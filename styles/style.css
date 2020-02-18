@@ -1,4 +1,44 @@
-ul {
+nav{
+    border-style: solid;
+}
+.nav-bar{
+    display: inline-block;
+    border-style: solid;
+}
+#avatar{
+    float: right;
+}
+#search-bar{
+    position: relative;
+    left: 50%;
+}
+section{
+    border-style: solid;
+}
+aside{
+    border-style: solid;
+}
+.main-section{
+    display: inline-block;
+}
+#video-section * {
+    border-style: solid;
+}
+.video-bottom{
+    display: inline-block;
+}
+#recommended-videos{
+    float: right;
+}
+article{
+    border-style: solid;
+}
+footer{
+    border-style: solid;
+}
+
+
+/* ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
@@ -67,4 +107,4 @@ h2 {
 
 #views {
     font-size: 20;
-}
+} */
