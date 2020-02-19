@@ -9,8 +9,8 @@ body{
 } 
 .topnav img {
     cursor: pointer;
-    height: 25px;
     float: left;
+    height: 25px;
     font-size: 17px;
     padding: 14px 16px;
     text-align: center;
@@ -30,14 +30,13 @@ body{
     cursor: pointer;
     float: right;
 }
-
 aside{
     background-color: white;
 }
 main {
-    width: 75%;
     position: relative;
     left: 15px;
+    width: 75%;
 }
 .avatar-murilo {
     cursor: pointer;
@@ -80,7 +79,7 @@ section a{
 #like-buttons {
     float: right;
 }
-#recommended-videos{
+section {
     float: right;
 }
 
