@@ -8,7 +8,7 @@ This page shows a video and the recommended videos related to it.
 HTML and CSS
 
 ## Live Demo
-[Click for the YouTube clone](https://rawcdn.githack.com/kblycaglayan/youtube-page/first-review/index.html)
+[Click for the YouTube clone](https://raw.githack.com/kblycaglayan/youtube-page/first-review/index.html)
 
 ## Getting Started
 You will be redirected to a random YouTube page. You can watch that video or go to the recommended videos on the right panel.
@@ -30,4 +30,4 @@ Contributions, issues and feature requests are welcome! Start by:
 * Design improvments
 
 ## Attributions and Credit
-Special thanks to our [TSE](https://github.com/Oluwadamilareolusakin) for his wonderful advices! 
+Special thanks to our [TSE](https://github.com/euqueme) for his wonderful advices! 
