@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(240, 233, 233);
+    background-color: rgb(235, 235, 235);
 }
 .topnav {
     position: relative;
@@ -14,6 +14,7 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    cursor: pointer;
 } 
 .topnav-centered {
     float: none;
@@ -27,6 +28,7 @@ body{
 }
 .topnav-right {
     float: right;
+    cursor: pointer;
 }
 section{
     padding-left: 10%;   
@@ -35,10 +37,19 @@ aside{
     background-color: white;
 }
 #video-section-1{
-    width: 70%;
+    width: 75%;
+}
+#avatar-murilo {
+    height: 50px; 
+    width: 50px;
+    cursor: pointer;
+}
+#subscribe {
+    height: 80px;
+    width: 120px;
 }
 #recommended-videos{
-    width: 30%;
+    width: 25%;
 }
 #recommended-videos img{
     height: 94px;
@@ -47,10 +58,12 @@ aside{
 #recommended-videos a{
     display: inline-block;
     width: 180px;
+    text-decoration: none;
+    color: black;
 }
 .video-titles{
     position: relative;
-    bottom: 10px;
+    bottom: ;
     word-wrap: break-word;
     font-size: 14px;
 }
@@ -61,6 +74,7 @@ aside{
 }
 .video-bottom {
     display: inline-block;
+    cursor: pointer;
 }
 .video-bottom img {
     height: 40px;
