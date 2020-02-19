@@ -2,8 +2,8 @@ body{
     background-color: rgb(235, 235, 235);
 }
 .topnav {
-    border-bottom-style: double;
     background-color: white;
+    border-bottom-style: double;
     overflow: hidden;
     position: relative;
 } 
@@ -13,8 +13,8 @@ body{
     float: left;
     font-size: 17px;
     padding: 14px 16px;
-    text-decoration: none;
-    text-align: center;   
+    text-align: center;
+    text-decoration: none;  
 } 
 .topnav-centered {
     float: none;
@@ -30,32 +30,32 @@ body{
     cursor: pointer;
     float: right;
 }
-section{
-    padding-left: 10%;   
-}
+
 aside{
     background-color: white;
 }
-#video-section-1{
+main {
     width: 75%;
+    position: relative;
+    left: 15px;
 }
-#avatar-murilo {
+.avatar-murilo {
     cursor: pointer;
     height: 50px; 
     width: 50px;
 }
-#subscribe {
-    height: 80px;
-    width: 120px;
+.subscribe {
+    height: 80px !important;
+    width: 120px !important;
 }
-#recommended-videos{
+section {
     width: 25%;
 }
-#recommended-videos img{
+section img{
     height: 94px;
     width: 168px;
 }
-#recommended-videos a{
+section a{
     color: black;
     display: inline-block;
     text-decoration: none;
@@ -88,8 +88,7 @@ footer{
     border-style: solid;
 }
 iframe {
-    height: 500px;
-    padding-left: 10px;  
+    height: 500px;  
     width: 90%;  
 }
 .comment-section{
