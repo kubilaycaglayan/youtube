@@ -34,8 +34,11 @@ section{
 aside{
     background-color: white;
 }
+#video-section-1{
+    width: 70%;
+}
 #recommended-videos{
-    width: 420px;
+    width: 30%;
 }
 #recommended-videos img{
     height: 94px;
@@ -54,7 +57,7 @@ aside{
 .main-section{
     padding-top: 25px;
     display: inline-block;
-    padding-left: 10%;
+
 }
 .video-bottom {
     display: inline-block;
@@ -69,80 +72,22 @@ aside{
     float: right;
 }
 article{
-    padding-left: 10%;
+    padding-left: 0%;
 }
 footer{
     border-style: solid;
 }
-
-
-/* ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: rgb(204, 74, 74);
+iframe {
+    width: 90%;
+    padding-left: 10px;
+    height: 500px;
 }
-
-li {
-float: left;
+.comment-section{
+    width: 90%;
 }
-button{
-height: 40px;
+.recommended{
+    display: flex;
 }
-.search-box{
-text-align: center;
-margin-left: 200px;
-width: 500px;
-height: 40px;
-border-color: black;
+.thumbnails img{
+    width: 70%;
 }
-.first-ul img{
-margin-left: 50px;
-width: 70px;
-height: 40px;
-}
-.second-ul img{
-margin-left: 50px;
-width: 70px;
-height: 40px;
-padding-top: 10px;
-}
-.side-bar{
-padding-left: 20px;
-float: right;
-background-color: white;
-max-width: 400px;
-}
-
-.first-ul{
-background-color: white;
-} 
-.comments{
-border: solid black;
-padding-left: 15px;
-}
-
-.body {
-    padding-left: 10%;
-
-}
-
-h1 {
-    text-align: center;
-
-}
-
-h2 {
-    text-align: center;
-}
-
-#notification-img {
-    
-    width: 50px;
-
-}
-
-#views {
-    font-size: 20;
-} */
