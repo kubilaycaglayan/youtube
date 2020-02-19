@@ -2,33 +2,33 @@ body{
     background-color: rgb(235, 235, 235);
 }
 .topnav {
-    position: relative;
-    overflow: hidden;
     border-bottom-style: double;
     background-color: white;
+    overflow: hidden;
+    position: relative;
 } 
 .topnav img {
+    cursor: pointer;
     height: 25px;
     float: left;
-    text-align: center;
+    font-size: 17px;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-    cursor: pointer;
+    text-align: center;   
 } 
 .topnav-centered {
     float: none;
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%); 
 }
 .topnav-centered input {
     width: 400px;
 }
 .topnav-right {
-    float: right;
     cursor: pointer;
+    float: right;
 }
 section{
     padding-left: 10%;   
@@ -40,9 +40,9 @@ aside{
     width: 75%;
 }
 #avatar-murilo {
+    cursor: pointer;
     height: 50px; 
     width: 50px;
-    cursor: pointer;
 }
 #subscribe {
     height: 80px;
@@ -56,25 +56,23 @@ aside{
     width: 168px;
 }
 #recommended-videos a{
-    display: inline-block;
-    width: 180px;
-    text-decoration: none;
     color: black;
+    display: inline-block;
+    text-decoration: none;
+    width: 180px;
 }
 .video-titles{
-    position: relative;
-    bottom: ;
-    word-wrap: break-word;
     font-size: 14px;
+    position: relative;
+    word-wrap: break-word;
 }
 .main-section{
-    padding-top: 25px;
     display: inline-block;
-
+    padding-top: 25px;
 }
 .video-bottom {
-    display: inline-block;
     cursor: pointer;
+    display: inline-block;
 }
 .video-bottom img {
     height: 40px;
@@ -85,16 +83,14 @@ aside{
 #recommended-videos{
     float: right;
 }
-article{
-    padding-left: 0%;
-}
+
 footer{
     border-style: solid;
 }
 iframe {
-    width: 90%;
-    padding-left: 10px;
     height: 500px;
+    padding-left: 10px;  
+    width: 90%;  
 }
 .comment-section{
     width: 90%;
