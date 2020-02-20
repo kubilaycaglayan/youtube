@@ -28,6 +28,3 @@ Contributions, issues and feature requests are welcome! Start by:
 * Comment section
 * Working buttons
 * Design improvments
-
-## Attributions and Credit
-Special thanks to our [TSE](https://github.com/euqueme) for his wonderful advices! 
