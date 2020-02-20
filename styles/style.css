@@ -1,7 +1,6 @@
 
 body{
     background-color: rgb(235, 235, 235);
-  
 }
 .topnav {
     background-color: white;
@@ -10,14 +9,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
     height: 50px;
     position: fixed;
     z-index: 10;
     padding: 0;
     top: -1px;
 } 
-
 .topnav img {
     cursor: pointer;
     float: left;
@@ -27,25 +24,19 @@ body{
     text-align: center;
     text-decoration: none;  
 } 
-
 .top-left {
     width: 50%;
     height: 50%;
     display: flex;
     align-items: center;
-    /*justify-content: space-around;*/
     position: relative;
     right: 250px;
+    cursor: pointer;
 }
-
 #ylogo {
-    /*width: 250% !important;
-    height:  250% !important;*/
     position: relative;
     left: -240px;
 }
-
-
 .topnav-centered {
     float: none;
     left: 50%;
@@ -63,25 +54,26 @@ body{
 .topnav-centered button {
     position: relative;
     height: 31px;
-    right: 3px;
-   
+    right: 3px; 
 }
-
 .topnav-right {
     display: flex;
     position: relative;
     cursor: pointer;
     float: right;
-    width: 8%;
+    width: 20%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     left: 50px;
 }
-
+.topnav-right svg {
+    position: relative;
+    margin: 20px;
+}
 aside{
-   
-    width: 100%;
-   
+    position: relative;
+    top: 15px;
+    width: 100%;  
 }
 main {
     position: relative;
@@ -102,21 +94,16 @@ section {
     width: 36%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around; 
 }
 
 section img{
     height: 94px;
-    width: 200px;
-   
+    width: 200px; 
 }
 section a{
     color: black;
-    
     text-decoration: none;
-    
-    
 }
 .video-titles{
     font-size: 14px;
@@ -127,33 +114,29 @@ section a{
     display: inline-block;
     padding-top: 25px;
 }
-
-
 .video-buttons {
     border-bottom-style: solid;
     border-color: rgb(97, 97, 97);
     width: 90%;
     color: rgb(61, 61, 61);
-    font-size: 24px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+    cursor: pointer;
 }
 .video-buttons path {
     width: 50px;
     color: gray;
 }
-
 .video-buttons2 {
-    width: 50%;
+    width: 30%;
     position: relative;
-
+    left: 15px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
 .like-buttons2 {
     position: relative;
     left: 5%;
@@ -162,34 +145,34 @@ section a{
     align-items: center;
     justify-content: space-around;
     border-bottom-style: solid;
-    border-bottom-color: lawngreen;
+    border-bottom-color: blue;
 }
 .video-buttons svg {
-    width: 3%; 
-    height: 3%;
+    width: 7%; 
+    height: 7%;
 }
-
 .subscription{
     display: flex;
     align-items: center;
-    
+    cursor: pointer;   
 }
 .subscription svg{
     position: relative;
     width: 15%;
-    left: 50%;
-    right: 10%;
+    left: 44%;
 }
-
+.subscription img{
+    position: relative;
+    width: 8%;
+    height: auto;
+}
 .subscription p {
     padding-left: 15px;
     font-size: 27px;
 }
-
 section {
     float: right;
 }   
-
 footer{
     border-style: solid;
 }
@@ -202,48 +185,41 @@ iframe {
     align-items: center;
     width: 420px;
     position: relative;
-}
-    
+}  
 .recommended .thumbnails {
     width: 50%;
 }
-
 section img  {  
     width: 85%;
     height: auto;
 }
-
 .recommended .video-titles {
     position: absolute;
-    left: 70%;
-    width: 50%
-    
-    
-    font-size: 20px;
+    left: 45%;
+    width: 50%;
+    font-size: 15px;
 }
-
 .underline {
+    position: relative;
     border-top-style: solid;
-    
     border-top-color: rgb(151, 151, 151);
     padding-top: 25px;
-    
+    top: 10px;
 }
-
 .time-tags {
     position: relative;
-    right: 110px;
-    top: 58px;
+    right: 87px;
+    top: 35px;
     background-color: black;
-    font-size: 22px;
+    font-size: 17px;
     color: white;
     font-weight: bold;
     width: 50px;
     text-align: center;
 }
-
 .show-more {
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     left: 100px;
+    
 }
