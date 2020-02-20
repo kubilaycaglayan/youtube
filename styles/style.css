@@ -90,6 +90,111 @@ main {
     height: 80px !important;
     width: 120px !important;
 }
+
+.video-information {
+    border-bottom-style: solid;
+}
+
+
+
+
+
+.comment-counts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: -15%;
+    cursor: pointer;
+
+}
+
+.comment-counts .sortby {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 13%;
+    height: 13%;
+}
+
+
+
+
+.comment-section svg{
+    width: 27%;
+    height: 27%;
+}
+
+.comment-input {
+    display: flex;
+ 
+    align-items: center;
+    justify-content: space-around;
+}
+
+.comment-input div {
+    width: 9%; 
+    height: 9%;
+}
+
+.comment-input-line {
+    width: 70%;
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    background-color: inherit;
+    position: relative;
+    left: -50px;
+}
+
+
+
+.indiv-comments {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+}
+
+.svgtrouble {
+    width: 7%; 
+    height: 7%;
+    position: relative;
+    top: -30px;
+}
+
+.like-comments {
+    display: flex;
+    width: 7%; 
+    height: 7%;
+    
+    
+}
+
+
+
+.thisisaveryspecialcontainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -15px;
+    
+}
+
+.thisisaveryspecialcontainer h4 {
+    position: relative;
+    left: 15%;
+
+}
+
+
+
+
+
+
+
 section {
     width: 36%;
     display: flex;
