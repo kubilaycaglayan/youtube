@@ -1,12 +1,23 @@
+
 body{
     background-color: rgb(235, 235, 235);
+  
 }
 .topnav {
     background-color: white;
-    border-bottom-style: double;
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+    padding: 0;
+    top: -1px;
 } 
+
 .topnav img {
     cursor: pointer;
     float: left;
@@ -16,6 +27,25 @@ body{
     text-align: center;
     text-decoration: none;  
 } 
+
+.top-left {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-around;*/
+    position: relative;
+    right: 250px;
+}
+
+#ylogo {
+    /*width: 250% !important;
+    height:  250% !important;*/
+    position: relative;
+    left: -240px;
+}
+
+
 .topnav-centered {
     float: none;
     left: 50%;
@@ -24,19 +54,40 @@ body{
     transform: translate(-50%, -50%); 
 }
 .topnav-centered input {
-    width: 400px;
+    width: 550px;
+    height: 25px;
+    border-color: rgb(235, 235, 235);
+    border-style: ridge;
+    text-align: center;
 }
+.topnav-centered button {
+    position: relative;
+    height: 31px;
+    right: 3px;
+   
+}
+
 .topnav-right {
+    display: flex;
+    position: relative;
     cursor: pointer;
     float: right;
+    width: 8%;
+    align-items: center;
+    justify-content: space-around;
+    left: 50px;
 }
+
 aside{
-    background-color: white;
+   
+    width: 100%;
+   
 }
 main {
     position: relative;
     left: 15px;
-    width: 75%;
+    width: 62%;
+    top:50px;
 }
 .avatar-murilo {
     cursor: pointer;
@@ -48,17 +99,24 @@ main {
     width: 120px !important;
 }
 section {
-    width: 25%;
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
+
 section img{
     height: 94px;
-    width: 168px;
+    width: 200px;
+   
 }
 section a{
     color: black;
-    display: inline-block;
+    
     text-decoration: none;
-    width: 180px;
+    
+    
 }
 .video-titles{
     font-size: 14px;
@@ -69,19 +127,68 @@ section a{
     display: inline-block;
     padding-top: 25px;
 }
-.video-bottom {
-    cursor: pointer;
-    display: inline-block;
+
+
+.video-buttons {
+    border-bottom-style: solid;
+    border-color: rgb(97, 97, 97);
+    width: 90%;
+    color: rgb(61, 61, 61);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
-.video-bottom img {
-    height: 40px;
+.video-buttons path {
+    width: 50px;
+    color: gray;
 }
-#like-buttons {
-    float: right;
+
+.video-buttons2 {
+    width: 50%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.like-buttons2 {
+    position: relative;
+    left: 5%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-style: solid;
+    border-bottom-color: lawngreen;
+}
+.video-buttons svg {
+    width: 3%; 
+    height: 3%;
+}
+
+.subscription{
+    display: flex;
+    align-items: center;
+    
+}
+.subscription svg{
+    position: relative;
+    width: 15%;
+    left: 50%;
+    right: 10%;
+}
+
+.subscription p {
+    padding-left: 15px;
+    font-size: 27px;
+}
+
 section {
     float: right;
-}
+}   
 
 footer{
     border-style: solid;
@@ -90,12 +197,53 @@ iframe {
     height: 500px;  
     width: 90%;  
 }
-.comment-section{
-    width: 90%;
-}
-.recommended{
+.recommended {
     display: flex;
+    align-items: center;
+    width: 420px;
+    position: relative;
 }
-.thumbnails img{
-    width: 70%;
+    
+.recommended .thumbnails {
+    width: 50%;
+}
+
+section img  {  
+    width: 85%;
+    height: auto;
+}
+
+.recommended .video-titles {
+    position: absolute;
+    left: 70%;
+    width: 50%
+    
+    
+    font-size: 20px;
+}
+
+.underline {
+    border-top-style: solid;
+    
+    border-top-color: rgb(151, 151, 151);
+    padding-top: 25px;
+    
+}
+
+.time-tags {
+    position: relative;
+    right: 110px;
+    top: 58px;
+    background-color: black;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+
+.show-more {
+    font-size: 25px;
+    position: relative;
+    left: 100px;
 }
