@@ -156,8 +156,8 @@ right: 10%;
 }
 
 .comment-input div {
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 85%;
     position: relative;
     top: -5%;
     fill: #bc407a;
@@ -183,7 +183,8 @@ right: 10%;
     align-items: center;
     justify-content: space-around;
     position: relative;
-    top: 30px;
+    top: -10px;
+    left: 1%;
 }
 
 .svgtrouble {
@@ -340,7 +341,7 @@ iframe {
 }
 .time-tags {
     position: absolute;
-    left: 30%;
+    left: 28%;
     top: 50%;
 
     background-color: black;
