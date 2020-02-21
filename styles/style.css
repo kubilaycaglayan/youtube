@@ -100,41 +100,43 @@ main {
 
 
 .comment-counts {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
     justify-content: space-around;
-    position: relative;
-    left: -15%;
     cursor: pointer;
-
+    color: #606060;
 }
 
-.comment-counts .sortby {
-    display: flex;
+.comment-counts .sortby{
+    display: grid;
+    grid-template-columns: 10% 30%;
+    fill: #606060;
     align-items: center;
-    justify-content: space-around;
-    width: 13%;
-    height: 13%;
+    justify-content: start;
+}
+
+.comment-counts .sortby svg{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    
 }
 
 
+    
 
-
-.comment-section svg{
-    width: 27%;
-    height: 27%;
-}
 
 .comment-input {
-    display: flex;
- 
+    display: grid;
+    grid-template-columns: 10% 90%;
     align-items: center;
     justify-content: space-around;
 }
 
 .comment-input div {
-    width: 9%; 
-    height: 9%;
+    width: 90%;
+    height: 90%;
 }
 
 .comment-input-line {
@@ -144,14 +146,16 @@ main {
     border-left-style: none;
     background-color: inherit;
     position: relative;
-    left: -50px;
+   
 }
 
 
-
+.commenttrouble{
+    position: relative;
+}
 .indiv-comments {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 8% 92%;
     align-items: center;
     justify-content: space-around;
     position: relative;
@@ -159,18 +163,17 @@ main {
 }
 
 .svgtrouble {
-    width: 7%; 
-    height: 7%;
+    width: 70%; 
+    height: 70%;
     position: relative;
     top: -30px;
 }
 
 .like-comments {
-    display: flex;
-    width: 7%; 
-    height: 7%;
-    
-    
+    display: grid;
+    fill: #606060;
+    grid-template-columns: 20px 50px 20px 50px;
+    text-align: center;
 }
 
 
@@ -186,7 +189,7 @@ main {
 .thisisaveryspecialcontainer h4 {
     position: relative;
     left: 15%;
-
+    color: #606060;
 }
 
 
