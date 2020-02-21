@@ -30,7 +30,7 @@ body{
     right: 200px;
     width: 50%;
 }
-#ylogo {
+.ylogo {
     left: -240px;
     position: relative;
 }
@@ -166,7 +166,7 @@ aside{
     position: relative;
     top: -15px;
 }
-.thisisaveryspecialcontainer h4 {
+.thisisaveryspecialcontainer .h4 {
     color: #606060;
     left: 5%;
     position: relative;
@@ -250,7 +250,7 @@ iframe {
     position: relative;
     top: 12px;
 }
-.autoplay h4 {
+.autoplay .hh4 {
     position: relative;
     right: 13%;
     text-align: right;
