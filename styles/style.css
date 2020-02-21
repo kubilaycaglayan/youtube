@@ -1,0 +1,358 @@
+
+body{
+    background-color: rgb(235, 235, 235);
+}
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+    padding: 0;
+    top: -1px;
+} 
+.topnav img {
+    cursor: pointer;
+    float: left;
+    height: 25px;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;  
+} 
+.top-left {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 200px;
+    cursor: pointer;
+}
+#ylogo {
+    position: relative;
+    left: -240px;
+}
+.topnav-centered {
+    float: none;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+}
+.topnav-centered input {
+    width: 550px;
+    height: 25px;
+    border-color: rgb(235, 235, 235);
+    border-style: ridge;
+    text-align: center;
+}
+.topnav-centered button {
+    position: relative;
+    height: 31px;
+    right: 3px; 
+}
+.topnav-right {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    left: 50px;
+}
+.topnav-right svg {
+    position: relative;
+    margin: 20px;
+}
+
+
+main {
+    display: grid;
+    
+    grid-template-columns: 66% 33%;
+    padding-left: 2%;
+  
+    
+}
+
+main div {
+    position: relative;
+    top: 30px;
+}
+
+.comment-section {
+    width: 100%;
+    position: relative;
+    top: -5%;
+}
+
+
+aside{
+    position: relative;
+    top: 15px;
+    width: 100%;  
+}
+
+.avatar-murilo {
+    cursor: pointer;
+    height: 50px; 
+    width: 50px;
+}
+
+
+.subscribe {
+    height: 80px !important;
+    width: 120px !important;
+   
+}
+
+.subscribe path{
+position: relative;
+right: 10%;
+}
+
+.video-information {    
+    border-bottom-style: solid;
+}
+
+
+
+
+
+.comment-counts {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    color: #606060;
+    padding-top: 5%;
+}
+
+
+
+.comment-counts  svg{
+    width: 7%;
+    position: relative;
+    right: -10%;
+    
+}
+
+
+    
+
+
+.comment-input {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.comment-input div {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    top: -5%;
+    fill: #bc407a;
+}
+
+.comment-input-line {
+    width: 70%;
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    background-color: inherit;
+    position: relative;
+   
+}
+
+
+.commenttrouble{
+    position: relative;
+}
+.indiv-comments {
+    display: grid;
+    grid-template-columns: 8% 92%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+}
+
+.svgtrouble {
+    width: 70%; 
+    height: 70%;
+    position: relative;
+
+}
+
+.like-comments {
+    display: grid;
+    fill: #606060;
+    grid-template-columns: 20px 50px 20px 50px;
+    text-align: center;
+}
+
+
+
+.thisisaveryspecialcontainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -15px;
+    
+}
+
+.thisisaveryspecialcontainer h4 {
+    position: relative;
+    left: 5%;
+    color: #606060;
+    top: 30px;
+}
+
+.recommended-videos a{
+    color: black;
+    text-decoration: none;
+}
+.video-titles{
+    font-size: 14px;
+    position: relative;
+    word-wrap: break-word;
+    
+}
+.video-information {
+    position: relative;
+    top: -2%;
+}
+
+.video-buttons {
+    color: rgb(61, 61, 61);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+}
+
+.video-buttons svg {
+    width: 2%;
+}
+
+.like-buttons {
+    width: 25%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 5px;
+    border-bottom-color: #085fd4;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    
+}
+
+.like-buttons svg {
+    width: 10%;
+}
+
+
+
+
+
+.subscription{
+    display: flex;
+    align-items: center;
+    cursor: pointer;   
+}
+.subscription svg{
+    position: relative;
+    width: 15%;
+    left: 44%;
+}
+.subscription img{
+    position: relative;
+    width: 8%;
+    height: auto;
+}
+.subscription p {
+    padding-left: 15px;
+    font-size: 27px;
+}
+
+footer{
+    border-style: solid;
+}
+.video-section {
+    width: 90%;
+}
+iframe {
+    width: 100%;
+    height: 360px;
+}
+
+.autoplay {
+    position: relative;
+    top: 12px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.autoplay h4 {
+    text-align: right;
+    position: relative;
+    right: 13%;
+
+}
+.recommended {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0.2%
+}  
+
+.recommended .thumbnails {
+    
+}
+
+.recommended .video-titles {
+    position: relative;
+    padding-left: 2%;
+    font-size: 15px;
+}
+.underline {
+    position: relative;
+    border-top-style: solid;
+    border-top-color: rgb(151, 151, 151);
+    padding-top: 25px;
+    top: 10px;
+}
+.time-tags {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+
+    background-color: black;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+.show-more {
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+    
+}
