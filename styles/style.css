@@ -30,7 +30,7 @@ body{
     display: flex;
     align-items: center;
     position: relative;
-    right: 250px;
+    right: 200px;
     cursor: pointer;
 }
 #ylogo {
@@ -86,12 +86,21 @@ main {
     height: 50px; 
     width: 50px;
 }
+
+
 .subscribe {
     height: 80px !important;
     width: 120px !important;
+   
 }
 
-.video-information {
+.subscribe path{
+position: relative;
+right: 10%;
+}
+
+.video-information {    
+    width: 95%;
     border-bottom-style: solid;
 }
 
@@ -225,7 +234,7 @@ section a{
 .video-buttons {
     border-bottom-style: solid;
     border-color: rgb(97, 97, 97);
-    width: 90%;
+
     color: rgb(61, 61, 61);
     font-size: 15px;
     display: flex;
@@ -285,14 +294,31 @@ footer{
     border-style: solid;
 }
 iframe {
-    height: 500px;  
-    width: 90%;  
+    height: 400px;  
+    width: 95%;  
+}
+
+.autoplay {
+    position: relative;
+    top: 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.autoplay h4 {
+    text-align: right;
+    position: relative;
+    right: 13%;
+
 }
 .recommended {
     display: flex;
     align-items: center;
-    width: 420px;
-    position: relative;
+    width: 420px;   
 }  
 .recommended .thumbnails {
     width: 50%;
