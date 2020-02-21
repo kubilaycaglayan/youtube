@@ -1,53 +1,291 @@
-ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: rgb(204, 74, 74);
+body{
+    background-color: rgb(235, 235, 235);
 }
-
-li {
-float: left;
+.topnav {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    top: -1px;
+    z-index: 10;
 }
-button{
-height: 40px;
-}
-.search-box{
-text-align: center;
-margin-left: 200px;
-width: 500px;
-height: 40px;
-border-color: black;
-}
-.first-ul img{
-margin-left: 50px;
-width: 70px;
-height: 40px;
-}
-.second-ul img{
-margin-left: 50px;
-width: 70px;
-height: 40px;
-}
-.side-bar{
-float: right;
-background-color: white;
-max-width: 400px;
-}
-
-.first-ul{
-background-color: white;
-} 
-.comments{
-border: solid black;
-}
-
-.body {
-    padding-left: 10%;
-
-}
-
-h1 {
+.topnav img {
+    cursor: pointer;
+    float: left;
+    font-size: 17px;
+    padding: 14px 16px;
     text-align: center;
-
+    text-decoration: none;
+}
+.top-left {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 50%;
+    position: relative;
+    right: 200px;
+    width: 50%;
+}
+.ylogo {
+    left: -240px;
+    position: relative;
+}
+.topnav-centered {
+    float: none;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.topnav-centered input {
+    border-color: rgb(235, 235, 235);
+    border-style: ridge;
+    height: 25px;
+    text-align: center;
+    width: 550px;
+}
+.topnav-centered button {
+    height: 31px;
+    position: relative;
+    right: 3px;
+}
+.topnav-right {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    left: 50px;
+    position: relative;
+    width: 20%;
+}
+.topnav-right svg {
+    margin: 20px;
+    position: relative;
+}
+main {
+    display: grid;
+    grid-template-columns: 66% 33%;
+    padding-left: 2%;
+}
+main div {
+    position: relative;
+    top: 30px;
+}
+.comment-section {
+    position: relative;
+    top: -5%;
+    width: 100%;
+}
+aside{
+    position: relative;
+    top: 15px;
+    width: 100%;
+}
+.avatar-murilo {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+.subscribe {
+    height: 80px;
+    width: 120px;
+}
+.subscribe path{
+    position: relative;
+    right: 10%;
+}
+.video-information {
+    border-bottom-style: solid;
+}
+.comment-counts {
+    align-items: center;
+    color: #606060;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    width: 50%;
+}
+.comment-counts svg{
+    position: relative;
+    right: -10%;
+    width: 7%;
+}
+.comment-input {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    justify-content: space-around;
+}
+.comment-input div {
+    fill: #bc407a;
+    height: 85%;
+    position: relative;
+    top: -5%;
+    width: 85%;
+}
+.comment-input-line {
+    background-color: inherit;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-top-style: none;
+    position: relative;
+    width: 70%;
+}
+.commenttrouble{
+    position: relative;
+}
+.indiv-comments {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 8% 92%;
+    justify-content: space-around;
+    left: 1%;
+    position: relative;
+    top: -10px;
+}
+.svgtrouble {
+    height: 70%;
+    position: relative;
+    width: 70%;
+}
+.like-comments {
+    display: grid;
+    fill: #606060;
+    grid-template-columns: 20px 50px 20px 50px;
+    text-align: center;
+}
+.thisisaveryspecialcontainer {
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: -15px;
+}
+.thisisaveryspecialcontainer .h4 {
+    color: #606060;
+    left: 5%;
+    position: relative;
+    top: 30px;
+}
+.recommended-videos a{
+    color: black;
+    text-decoration: none;
+}
+.video-titles{
+    font-size: 14px;
+    position: relative;
+    word-wrap: break-word;
+}
+.video-information {
+    position: relative;
+    top: -2%;
+}
+.video-buttons {
+    align-items: center;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+.video-buttons svg {
+    width: 2%;
+}
+.like-buttons {
+    align-items: center;
+    border-bottom-color: #085fd4;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    display: inline-flex;
+    justify-content: space-around;
+    position: relative;
+    top: 5px;
+    width: 25%;
+}
+.like-buttons svg {
+    width: 10%;
+}
+.subscription{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+.subscription svg{
+    left: 44%;
+    position: relative;
+    width: 15%;
+}
+.subscription img{
+    height: auto;
+    position: relative;
+    width: 8%;
+}
+.subscription p {
+    font-size: 27px;
+    padding-left: 15px;
+}
+footer{
+    border-style: solid;
+}
+.video-section {
+    width: 90%;
+}
+iframe {
+    height: 360px;
+    width: 100%;
+}
+.autoplay {
+    color: gray;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    top: 12px;
+}
+.autoplay .hh4 {
+    position: relative;
+    right: 13%;
+    text-align: right;
+}
+.recommended {
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 0.2% 
+}
+.recommended .video-titles {
+    font-size: 15px;
+    padding-left: 2%;
+    position: relative;
+}
+.underline {
+    border-top-color: rgb(151, 151, 151);
+    border-top-style: solid;
+    padding-top: 25px;
+    position: relative;
+    top: 10px;
+}
+.time-tags {
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    left: 26%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 50px;
+}
+.show-more {
+    font-size: 20px;
+    left: 100px;
+    position: relative;
 }

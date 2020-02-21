@@ -1,76 +1,513 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 
 <head>
-    <title>BraTube</title>
-    <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico" type="image/x-icon">
 </head>
 
 <body>
-    <ul class="first-ul">
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/YouTube_Logo.svg" alt="Youtube Logo"></li>
-        <li>
-            <form>
-                <input class="search-box" type="text" placeholder="Search in YouTube" name="search">
-                <button type="submit">Search</button>
-                <br>
-            </form>
-        </li>
-        <li><img src="https://www.brandeps.com/icon-download/C/Cloud-upload-icon-vector-06.svg"></li>
-        <li><img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Echo_%28Notifications%29_logo.svg/768px-Echo_%28Notifications%29_logo.svg.png">
-        </li>
-        <li><img src="images\Untitled.png"></li>
-    </ul>
-    <ul>
-        <li class="body">
-            <h1>This our Brazillian Coffee!</h1> 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VtM9Doxw878" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+    <div class="topnav">
+        <div class="top-left">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                <g class="style-scope yt-icon">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+            <svg id="ylogo" viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="ylogo"
+                style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                <g class="style-scope ytd-topbar-logo-renderer">
+                    <path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31
+c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56
+C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30
+S64.31,19.77,63,14.87z" class="style-scope ytd-topbar-logo-renderer"></path>
+                    <polygon fill="#FFFFFF" points="26.6,39.43 42.93,30 26.6,20.57"
+                        class="style-scope ytd-topbar-logo-renderer"></polygon>
+                </g>
+                <g class="style-scope ytd-topbar-logo-renderer">
+                    <g id="youtube-paths" class="style-scope ytd-topbar-logo-renderer">
+                        <path fill="#282828" d="M92.69,48.03c-1.24-0.84-2.13-2.14-2.65-3.91c-0.52-1.77-0.79-4.12-0.79-7.06v-4
+c0-2.97,0.3-5.35,0.9-7.15c0.6-1.8,1.54-3.11,2.81-3.93c1.27-0.82,2.94-1.24,5.01-1.24c2.04,0,3.67,0.42,4.9,1.26
+c1.23,0.84,2.13,2.15,2.7,3.93c0.57,1.78,0.85,4.16,0.85,7.12v4c0,2.94-0.28,5.3-0.83,7.08c-0.55,1.78-1.45,3.09-2.7,3.91
+c-1.24,0.82-2.93,1.24-5.06,1.24C95.65,49.29,93.93,48.87,92.69,48.03z M99.66,43.71c0.34-0.9,0.52-2.37,0.52-4.4v-8.59
+c0-1.98-0.17-3.42-0.52-4.34c-0.34-0.91-0.95-1.37-1.82-1.37c-0.84,0-1.43,0.46-1.78,1.37c-0.34,0.91-0.52,2.36-0.52,4.34v8.59
+c0,2.04,0.16,3.51,0.49,4.4c0.33,0.9,0.93,1.35,1.8,1.35C98.71,45.06,99.31,44.61,99.66,43.71z"
+                            class="style-scope ytd-topbar-logo-renderer"></path>
+                        <path fill="#282828" d="M188.16,37.13v1.39c0,1.77,0.05,3.09,0.16,3.98c0.1,0.88,0.32,1.53,0.65,1.93
+c0.33,0.4,0.84,0.61,1.53,0.61c0.93,0,1.57-0.36,1.91-1.08c0.34-0.72,0.53-1.92,0.56-3.6l5.35,0.31
+c0.03,0.24,0.04,0.57,0.04,0.99c0,2.55-0.7,4.45-2.09,5.71c-1.39,1.26-3.36,1.89-5.91,1.89c-3.06,0-5.2-0.96-6.43-2.88
+c-1.23-1.92-1.84-4.88-1.84-8.9v-4.81c0-4.14,0.64-7.15,1.91-9.06c1.27-1.9,3.45-2.85,6.54-2.85c2.13,0,3.76,0.39,4.9,1.17
+c1.14,0.78,1.94,1.99,2.41,3.64c0.46,1.65,0.7,3.93,0.7,6.83v4.72H188.16z M188.95,25.53c-0.31,0.39-0.52,1.03-0.63,1.91
+c-0.11,0.88-0.16,2.23-0.16,4.02v1.98h4.54v-1.98c0-1.77-0.06-3.11-0.18-4.02c-0.12-0.91-0.34-1.56-0.65-1.93
+c-0.31-0.37-0.8-0.56-1.46-0.56C189.75,24.94,189.26,25.14,188.95,25.53z" class="style-scope ytd-topbar-logo-renderer">
+                        </path>
+                        <path fill="#282828" d="M77.59,36.61l-7.06-25.49h6.16l2.47,11.55c0.63,2.85,1.09,5.27,1.39,7.28h0.18
+c0.21-1.44,0.67-3.85,1.39-7.24l2.56-11.6h6.16L83.7,36.61v12.23h-6.11V36.61z"
+                            class="style-scope ytd-topbar-logo-renderer"></path>
+                        <path fill="#282828" d="M126.45,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8
+c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79
+c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H126.45z" class="style-scope ytd-topbar-logo-renderer">
+                        </path>
+                        <path fill="#282828" d="M158.27,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8
+c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79
+c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H158.27z" class="style-scope ytd-topbar-logo-renderer">
+                        </path>
+                        <path fill="#282828" d="M143.31,16.11h-6.16v32.72h-6.07V16.11h-6.16v-4.99h18.38V16.11z"
+                            class="style-scope ytd-topbar-logo-renderer"></path>
+                        <path fill="#282828" d="M178.8,25.69c-0.38-1.74-0.98-3-1.82-3.78c-0.84-0.78-1.99-1.17-3.46-1.17c-1.14,0-2.2,0.32-3.19,0.97
+c-0.99,0.64-1.75,1.49-2.29,2.54h-0.05l0-14.52h-5.98v39.11h5.12l0.63-2.61h0.13c0.48,0.93,1.2,1.66,2.16,2.2
+c0.96,0.54,2.02,0.81,3.19,0.81c2.1,0,3.64-0.97,4.63-2.9c0.99-1.93,1.48-4.95,1.48-9.06v-4.36
+C179.36,29.84,179.17,27.43,178.8,25.69z M173.11,36.93c0,2.01-0.08,3.58-0.25,4.72c-0.16,1.14-0.44,1.95-0.83,2.43
+c-0.39,0.48-0.91,0.72-1.57,0.72c-0.51,0-0.98-0.12-1.42-0.36c-0.43-0.24-0.79-0.6-1.06-1.08V27.71
+c0.21-0.75,0.57-1.36,1.08-1.84c0.51-0.48,1.06-0.72,1.66-0.72c0.63,0,1.12,0.25,1.46,0.74c0.34,0.49,0.58,1.33,0.72,2.49
+c0.13,1.17,0.2,2.83,0.2,4.99V36.93z" class="style-scope ytd-topbar-logo-renderer"></path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <form class="topnav-centered">
+            <input class="active" type="text" placeholder="Search in YouTube" name="search">
+            <button class="active" type="submit">Search</button>
+        </form>
 
-            <ul class="second-ul">
-                <li>
-                    <p>Views:18,500</p>
-                </li>
+        <div class="topnav-right">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                <g class="style-scope yt-icon">
+                    <path
+                        d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"
+                        class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                <g class="style-scope yt-icon">
+                    <path
+                        d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
+                        class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                <g class="style-scope yt-icon">
+                    <path
+                        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                        class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                <g class="style-scope yt-icon">
+                    <path
+                        d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z"
+                        class="style-scope yt-icon"></path>
+                </g>
+            </svg>
+        </div>
+    </div>
 
-                <li><img src="https://image.freepik.com/free-vector/like-dislike-flat-icons_87538-584.jpg"
-                        alt="Like and dislike buttons." width="100" height="100"></li>
-                <li><img src="https://thumbs.dreamstime.com/z/share-button-rounded-isolated-sign-158485440.jpg"
-                        alt="Share Button" width="100" height="100"></li>
-                <li><img src="https://cdn4.iconfinder.com/data/icons/user-avatar-flat-icons/512/User_Avatar-04-512.png"
-                        alt="Avatar" width="100" height="100"></li>
-                <li><img src="https://i.pinimg.com/originals/91/e9/65/91e965a8c2f1556057fe722e0c023949.jpg"
-                        alt="Subscribe" width="100" height="100"></li>
-            </ul>
-            <ul class="comments">
-                <h2>Comments:</h2>
-                <h5>OMG I love that video!</h5>
-            </ul>
-        </li>
-        <li class="side-bar">
-            <a target="_blank" href="https://www.youtube.com/watch?v=FCgz1ksVQdg"><img
-                    src="images/youtuberecommend1.png" alt="Recommended Video 1"><br> Exploring Brazilian Coffee at
-                Daterra Coffee Farm | European Coffee Trip</a><br>
-            <p>Views: 3,140</p>
-            <a target="_blank" href="https://www.youtube.com/watch?v=T_sYOMGMDIw"><img
-                    src="images/youtuberecommend2.png" alt="Recommended Video 1"><br>Nova máquina ajuda agricultores na
-                safra do café conilon no ES </a><br>
-            <p>Views: 5,140</p>
-            <a target="_blank" href="https://www.youtube.com/watch?v=PIiCXig4ZkQ"><img
-                    src="images/youtuberecommend3.png" alt="Recommended Video 1"><br>Estate Grown Coffee in the
-                Highlands of Tanzania | Mondul Coffee Estates</a><br>
-            <p>Views: 1,054.478</p>
-            <a target="_blank" href="https://www.youtube.com/watch?v=NXI9cUnj1gU"><img
-                    src="images/youtuberecommend4.png" alt="Recommended Video 1"><br>Climate-friendly coffee farming in
-                Costa Rica | DW English </a><br>
-            <p>Views:2</p>
-            <a target="_blank" href="https://www.youtube.com/watch?v=RjTNcA1ImD4"><img
-                    src="images/youtuberecommend5.png" alt="Recommended Video 1"><br>EFICO TRADE (BRAZIL) - PICKING
-                METHODS - MACHINES </a><br>
-            <p>Views: 460</p>
-        </li>
-    </ul>
+    <main id="video-section-1" class="main-section">
+
+        <div class="video-section">
+            <div id="video">
+                <iframe src="https://www.youtube.com/embed/VtM9Doxw878"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <br>
+            <h2>The Genuine Origin Coffee Project | Brazil</h2>
+
+            <div class="video-information">
+                <div class="video-buttons">
+                    <h5>31,437 views • Jun 23, 2016</h5>
+
+                    <div class="like-buttons">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <p>52</p>
+
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <p>3</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                    </svg>
+
+                    <p><strong>SHARE</strong></p>
+
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon">
+                        <g class="style-scope yt-icon">
+                            <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"
+                                class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                    <p><strong>SAVE</strong></p>
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon">
+                        <g class="style-scope yt-icon">
+                            <circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle>
+                            <circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle>
+                            <circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
+                        </g>
+                    </svg>
+
+                </div>
+                <div class="subscription">
+                    <img class="style-scope yt-img-shadow" alt=""
+                        src="https://yt3.ggpht.com/a/AGF-l7-A15Z3xRHG6dQOtToa8qaLvWS-ykd8nOVMXw=s88-c-k-c0xffffffff-no-rj-mo">
+                    <p><strong>Genuine Origin </strong><br> 325 subscribers</p>
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333333 333333"
+                        shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                        image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M1316 122445h330701c724 0 1317 593 1317 1317v85809c0 724-593 1317-1317 1317H1316c-724 0-1316-593-1316-1317v-85809c0-724 592-1317 1316-1317zm137101 37774h-7893v-2417c0-1130-104-1853-303-2163-200-310-530-461-999-461-509 0-895 207-1157 627-261 413-393 1040-393 1887 0 1088 152 1908 448 2459 289 544 1088 1212 2404 1997 3767 2252 6143 4105 7121 5544 985 1439 1474 3761 1474 6956 0 2328-275 4043-819 5152-544 1102-1591 2025-3154 2769-1557 751-3368 1122-5441 1122-2273 0-4208-434-5820-1294-1605-861-2652-1956-3154-3285-496-1336-744-3230-744-5675v-2142h7893v3974c0 1226 110 2011 331 2362 220 351 613 524 1178 524s985-220 1260-668c276-441 413-1102 413-1970 0-1922-262-3182-785-3767-544-593-1867-1584-3974-2975-2107-1398-3498-2417-4187-3051-682-633-1254-1508-1701-2624-448-1116-675-2541-675-4277 0-2500 317-4332 957-5489s1667-2059 3092-2714c1426-654 3141-978 5159-978 2204 0 4077 358 5633 1068 1550 716 2576 1611 3079 2700 503 1081 757 2920 757 5517v1295zm22693-9917v21853c0 2480-83 4222-241 5220-165 1006-640 2039-1432 3092-792 1061-1839 1860-3134 2404-1302 544-2830 819-4594 819-1949 0-3671-324-5158-971-1494-648-2610-1488-3347-2521-744-1040-1178-2135-1315-3285-131-1150-200-3574-200-7259v-19353h8513v24518c0 1426 76 2342 228 2734 151 399 461 599 923 599 523 0 868-220 1019-654 151-441 227-1474 227-3099v-24098h8513zm3299 0h8458c2672 0 4697 206 6074 627 1378 413 2486 1260 3333 2528 847 1274 1267 3319 1267 6143 0 1907-296 3237-895 3987-599 758-1784 1329-3547 1736 1970 448 3306 1184 4008 2211 702 1033 1054 2610 1054 4745v3030c0 2211-255 3843-757 4911-503 1061-1302 1791-2404 2183-1102 393-3361 585-6777 585h-9815v-32686zm8513 5578v7273c358-14 634-20 833-20 813 0 1336-207 1556-613 228-413 337-1591 337-3526 0-1026-89-1743-275-2156-186-406-427-668-723-778-296-103-875-165-1729-179zm0 12356v9174c1171-41 1922-227 2245-565 324-337 482-1171 482-2493v-3058c0-1405-144-2252-434-2555-289-296-1054-461-2293-503zm32280-8017h-7893v-2417c0-1130-104-1853-303-2163-200-310-530-461-999-461-509 0-895 207-1157 627-261 413-393 1040-393 1887 0 1088 152 1908 448 2459 289 544 1088 1212 2404 1997 3767 2252 6143 4105 7121 5544 985 1439 1474 3761 1474 6956 0 2328-275 4043-819 5152-544 1102-1591 2025-3154 2769-1557 751-3368 1122-5441 1122-2273 0-4208-434-5820-1294-1605-861-2652-1956-3154-3285-496-1336-744-3230-744-5675v-2142h7893v3974c0 1226 110 2011 331 2362 220 351 613 524 1178 524s985-220 1260-668c276-441 413-1102 413-1970 0-1922-262-3182-785-3767-544-593-1867-1584-3974-2975-2107-1398-3498-2417-4187-3051-682-633-1254-1508-1701-2624-448-1116-675-2541-675-4277 0-2500 317-4332 957-5489s1667-2059 3092-2714c1426-654 3141-978 5159-978 2204 0 4077 358 5633 1068 1550 716 2576 1611 3079 2700 503 1081 757 2920 757 5517v1295zm23230 4339h-8513v-5675c0-1653-89-2679-269-3092-179-406-578-613-1191-613-689 0-1130 248-1315 744-186 503-283 1577-283 3230v15165c0 1591 96 2624 283 3113 186 482 606 723 1253 723 627 0 1040-241 1233-730 193-482 289-1625 289-3423v-4111h8513v1274c0 3389-241 5792-716 7204-475 1419-1536 2658-3168 3726-1639 1067-3650 1598-6047 1598-2486 0-4539-448-6157-1350-1612-902-2686-2149-3209-3747-524-1598-785-3994-785-7197v-9546c0-2356 83-4119 241-5296 165-1178 641-2314 1446-3402 799-1088 1908-1949 3327-2576s3051-937 4897-937c2500 0 4566 482 6198 1453 1625 964 2693 2170 3209 3616 510 1446 765 3692 765 6743v3106zm3044-14256h6013c4008 0 6722 151 8141 461s2576 1102 3471 2376c895 1267 1343 3299 1343 6081 0 2541-317 4249-950 5124-627 874-1873 1398-3733 1570 1680 420 2817 978 3395 1680 578 696 937 1343 1074 1929 144 585 213 2197 213 4835v8630h-7893v-10875c0-1749-138-2831-413-3251-269-420-985-627-2149-627v14752h-8513v-32686zm8513 5578v7273c950 0 1612-131 1991-393s572-1116 572-2555v-1798c0-1040-186-1722-551-2045-365-324-1040-482-2011-482zm22252-5578v32686h-8513v-32686h8513zm3395 0h8457c2672 0 4697 206 6074 627 1378 413 2486 1260 3333 2528 847 1274 1267 3319 1267 6143 0 1907-296 3237-895 3987-599 758-1784 1329-3547 1736 1970 448 3306 1184 4008 2211 702 1033 1054 2610 1054 4745v3030c0 2211-255 3843-757 4911-503 1061-1302 1791-2404 2183-1102 393-3361 585-6777 585h-9814v-32686zm8513 5578v7273c358-14 634-20 833-20 813 0 1336-207 1556-613 228-413 337-1591 337-3526 0-1026-89-1743-275-2156-186-406-427-668-723-778-296-103-875-165-1729-179zm0 12356v9174c1171-41 1922-227 2245-565 324-337 482-1171 482-2493v-3058c0-1405-144-2252-434-2555-289-296-1054-461-2293-503zm14304-17934h14174v6529h-5661v6240h5289v6198h-5289v7190h6240v6529h-14752v-32686zm-187969 2152s-694-4900-2830-7051c-2706-2830-5737-2848-7122-3012-9939-724-24868-724-24868-724h-26s-14922 0-24866 724c-1391 169-4417 180-7122 3012-2137 2151-2817 7051-2817 7051s-707 5749-707 11511v5387c0 5750 707 11511 707 11511s694 4899 2816 7055c2706 2829 6261 2737 7847 3039 5691 543 24173 707 24173 707s14941-26 24880-737c1391-165 4416-181 7122-3012 2137-2151 2830-7056 2830-7056s707-5750 707-11511v-5387c-14-5750-722-11511-722-11511l-4 4zm-42182 23435v-19977l19202 10022-19202 9956z"
+                            fill="#c00" /></svg>
+
+                </div>
+                <p class="show-more">Category Public</p>
+                <p class="show-more">Licence Commune</p>
+                <p class="show-more">SHOW MORE</p>
+            </div>
+            <div class="comment-section">
+
+
+                <div class="comment-counts">
+                    <h3>1.713 Comments </h3>
+
+
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                        class="style-scope yt-icon">
+                        <g class="style-scope yt-icon">
+                            <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" class="style-scope yt-icon">
+                            </path>
+                            <path d="M0 0h24v24H0z" fill="none" class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+
+
+                    <h3>SORT BY</h3>
+
+                </div>
+
+
+                <div class="comment-input">
+                    <div>
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <input class="comment-input-line" type="text" placeholder="Add a comment">
+                </div>
+
+
+
+                <div class="indiv-comments">
+
+
+                    <div class="svgtrouble">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="commenttrouble">
+                        <div class="usr-com">
+                            <p><strong>User Name </strong> 3 years ago</p>
+                            <p>Comments of this user. Very serious things about the video. Critisizing</p>
+                        </div>
+                        <div class="thisisaveryspecialcontainer">
+                            <div class="like-comments">
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                    class="style-scope yt-icon"
+                                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                    <g class="style-scope yt-icon">
+                                        <path
+                                            d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                                            class="style-scope yt-icon"></path>
+                                    </g>
+                                </svg>
+                                <p>100</p>
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                    class="style-scope yt-icon"
+                                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                    <g class="style-scope yt-icon">
+                                        <path
+                                            d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                                            class="style-scope yt-icon"></path>
+                                    </g>
+                                </svg>
+                                <p>100</p>
+
+                            </div>
+                            <h4 class="h4">REPLY</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indiv-comments">
+
+
+                    <div class="svgtrouble">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="commenttrouble">
+                        <div class="usr-com">
+                            <p><strong>User Name </strong> 3 years ago</p>
+                            <p>Comments of this user. Very serious things about the video. Critisizing</p>
+                        </div>
+                        <div class="thisisaveryspecialcontainer">
+                            <div class="like-comments">
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                    class="style-scope yt-icon"
+                                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                    <g class="style-scope yt-icon">
+                                        <path
+                                            d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                                            class="style-scope yt-icon"></path>
+                                    </g>
+                                </svg>
+                                <p>100</p>
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                    class="style-scope yt-icon"
+                                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                    <g class="style-scope yt-icon">
+                                        <path
+                                            d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                                            class="style-scope yt-icon"></path>
+                                    </g>
+                                </svg>
+                                <p>100</p>
+
+                            </div>
+                            <h4 class="h4">REPLY</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indiv-comments">
+
+
+                    <div class="svgtrouble">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="commenttrouble">
+                        <div class="usr-com">
+                            <p><strong>User Name </strong> 3 years ago</p>
+                            <p>Comments of this user. Very serious things about the video. Critisizing</p>
+                        </div>
+                        <div class="thisisaveryspecialcontainer">
+                            <div class="like-comments">
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                    class="style-scope yt-icon"
+                                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                    <g class="style-scope yt-icon">
+                                        <path
+                                            d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                                            class="style-scope yt-icon"></path>
+                                    </g>
+                                </svg>
+                                <p>100</p>
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                    class="style-scope yt-icon"
+                                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                    <g class="style-scope yt-icon">
+                                        <path
+                                            d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                                            class="style-scope yt-icon"></path>
+                                    </g>
+                                </svg>
+                                <p>100</p>
+
+                            </div>
+                            <h4 class="h4">REPLY</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="indiv-comments">
+
+
+                    <div class="svgtrouble">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="commenttrouble">
+                        <div class="usr-com">
+                            <p><strong>User Name </strong> 3 years ago</p>
+                            <p>Comments of this user. Very serious things about the video. Critisizing</p>
+                        </div>
+                        <div class="thisisaveryspecialcontainer">
+                            <div class="like-comments">
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                    class="style-scope yt-icon"
+                                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                    <g class="style-scope yt-icon">
+                                        <path
+                                            d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                                            class="style-scope yt-icon"></path>
+                                    </g>
+                                </svg>
+                                <p>100</p>
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                                    class="style-scope yt-icon"
+                                    style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                    <g class="style-scope yt-icon">
+                                        <path
+                                            d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                                            class="style-scope yt-icon"></path>
+                                    </g>
+                                </svg>
+                                <p>100</p>
+
+                            </div>
+                            <h4 class="h4">REPLY</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="recommended-videos">
+
+            <div class="autoplay">
+                <h3>Up next</h3>
+                <h4 class="hh4">AUTOPLAY</h4>
+            </div>
+            <div class="recommended">
+                <a target="_blank" href="https://www.youtube.com/watch?v=FCgz1ksVQdg" class="thumbnails">
+                    <p class="time-tags">10:37</p><img class="style-scope yt-img-shadow" alt="" width="168"
+                        src="https://i.ytimg.com/vi/FCgz1ksVQdg/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCZf1UeNz7aM8Rq5BbAgRn9FgXWUA">
+                </a>
+                <a href="https://www.youtube.com/watch?v=FCgz1ksVQdg" class="video-titles"><strong>Exploring
+                        Brazilian
+                        Coffee at Daterra Coffee Farm | European Coffee Trip
+
+
+                    </strong>
+                    <p>41 B views</p>
+                </a>
+
+            </div>
+            <div class="underline"></div>
+            <div class="recommended">
+
+                <a target="_blank" href="https://www.youtube.com/watch?v=T_sYOMGMDIw" class="thumbnails"><img
+                        class="style-scope yt-img-shadow" alt="" width="168"
+                        src="https://i.ytimg.com/vi/6Of5A8IfxxM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAdZr4on8OQDPmO2GfqtnlekDvsyg"></a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=T_sYOMGMDIw" class="video-titles"><strong>Café
+                        Robusta produz cerca de 150 sacas por ha em Aguá Doce do Norte RO cà phê
+
+                    </strong>
+                    <p>Recommended for you</p>
+                </a>
+                <p class="time-tags">3:46</p>
+
+            </div>
+            <div class="recommended">
+
+                <a target="_blank" href="https://www.youtube.com/watch?v=PIiCXig4ZkQ" class="thumbnails"><img
+                        class="style-scope yt-img-shadow" alt="" width="168"
+                        src="https://i.ytimg.com/vi/5xz-vRzCsUI/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDThGilXDQF1Mb3tQOTAPyDlQGLeQ"></a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=PIiCXig4ZkQ"
+                    class="video-titles"><strong>COFFEE PRUNING - Tradition and Innovation
+                        GreenwellFarms
+                    </strong>
+                    <p>44 B viewse</p>
+                </a>
+                <p class="time-tags">5:23</p>
+            </div>
+            <div class="recommended">
+
+                <a target="_blank" href="https://www.youtube.com/watch?v=NXI9cUnj1gU" class="thumbnails"><img
+                        class="style-scope yt-img-shadow" alt="" width="168"
+                        src="https://i.ytimg.com/vi/P-__8bWaeTM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDLcsL5ipjBNpMyQ2G_JdB1Pzz5og"></a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=NXI9cUnj1gU" class="video-titles"><strong>The
+                        Genuine Origin Coffee Project | Sumatra
+                        Genuine Origin
+                    </strong>
+                    <p>3,6 B views</p>
+                </a>
+                <p class="time-tags">2:37</p>
+            </div>
+            <div class="recommended">
+
+                <a target="_blank" href="https://www.youtube.com/watch?v=RjTNcA1ImD4" class="thumbnails"><img
+                        class="style-scope yt-img-shadow" alt="" width="168"
+                        src="https://i.ytimg.com/vi/zCU96OVoT3U/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDPSGiMQV6rugmm7-HFiCWAqXywtw"></a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=RjTNcA1ImD4" class="video-titles"><strong>cara
+                        menyambung kopi agar berbuah lebat
+                        taqrowi mandangwong
+                    </strong>
+                    <p>Recommended for you</p>
+                </a>
+                <p class="time-tags">8:54</p>
+            </div>
+
+        </div>
+    </main>
+
 </body>
-
 
 </html>
