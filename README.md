@@ -1,6 +1,9 @@
 # YouTube Page
 This is a clone of the YouTube page.
 
+![Screenshot_2020-03-03 YouTube](https://user-images.githubusercontent.com/60448833/75763076-be4f7f00-5d4c-11ea-984f-0edb2fbd82b3.png)
+
+
 # What it does
 This page shows a video and the recommended videos related to it.
 
