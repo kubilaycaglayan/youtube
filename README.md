@@ -16,6 +16,14 @@ HTML and CSS
 ## Getting Started
 You will be redirected to a random YouTube page. You can watch that video or go to the recommended videos on the right panel.
 
+# Authors
+Murilo Roque
+
+Kubilay Çağlayan
+
+kblycaglayan@gmail.com
+Github: @kblycaglayan
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome! Start by:
