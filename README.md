@@ -17,12 +17,18 @@ HTML and CSS
 You will be redirected to a random YouTube page. You can watch that video or go to the recommended videos on the right panel.
 
 # Authors
-Murilo Roque
+Kubilay Caglayan
 
-Kubilay Çağlayan
+Github: @kblycaglayan <br>
+E-mail: kblycaglayan@gmail.com <br>
+Linkedin: https://www.linkedin.com/in/kubilaycaglayan/
 
-kblycaglayan@gmail.com
-Github: @kblycaglayan
+Murilo Roque Paiva da Silva
+
+Github: @MuriloRoque <br>
+Twitter: @MuriloRoquePai1 <br>
+Linkedin: https://www.linkedin.com/in/murilo-roque-b1268741/ <br>
+Avaiable for hire: YES
 
 ## 🤝 Contributing
 
